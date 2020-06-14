@@ -1,6 +1,9 @@
 import Vue from "vue";
 import app from "./App.vue";
 
+import VueRouter from "vue-router";
+Vue.use(VueRouter);
+import router from "./router";
 
 //导入所有的mintui组件
 //导入mint-ui
@@ -10,8 +13,14 @@ import 'mint-ui/lib/style.css' //把所有的组件注册为全局的组件
 //将mint-ui安装到vue中
 Vue.use(MintUI)
 
+//2.1 导入Vue-resource
+import VueResource from "vue-resource";
+
+Vue.use(VueResource)
+
 
 var vm = new Vue({
     el: "#app",
-    render: c => c(app)
+    render: c => c(app),
+    router
 })
