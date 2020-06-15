@@ -8,7 +8,7 @@
         </mt-swipe>
 
         <ul class="choice">
-            <li>新闻资讯</li>
+            <li><router-link to="/home/newslist">新闻资讯</router-link></li>
             <li>图片分享</li>
             <li>商品购买</li>
         </ul>
